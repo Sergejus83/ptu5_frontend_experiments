@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="lt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Zmones</title>
+    </head>
+    <body>   
+        {# nesimatomas Komentaras #}
+        <h1>Zmones</h1>
+        <h3>Geru studentu sarasas</h3>
+        <!-- horisontal line -->
+        <hr>
+        <!-- <ul> -->
+        <ol>
+        {% for zmogus in zmones %}
+
+            <li>{{ zmogus }}</li>
+
+            <!-- <li>{{ zmogus }}</li> -->
+            <!-- <p>{{ zmogus }}</p> -->
+        {% endfor %}
+        <!-- </ul> -->
+        <ol>
+    </body>
+</html>
