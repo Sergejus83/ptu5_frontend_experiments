@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Styling</title>
+    <style>
+
+body { background-color: rgb(185, 228, 228);
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("{{ url_for('static', filename='imd_helloween.jpeg')}}");
+    background-size: cover;
+}
+h1,h2,h3 { 
+    text-align: center; /* tekstas centruotas */
+    background-color: rgb(241, 232, 243); /* fono splva */
+    padding: 1rem; /* vidinis atitraukimas per 1 reliatyviu elementa (rem) */
+    border: 2px solid rgb(204, 19, 19);  /* remelio storis 2 pixel, spalva */
+    margin: 0.5rem auto 0; /* isorinis remelis 0, virsus ir apacia - auto, is sono (kad centruoti) */
+    width: 50vw; /* plotis - puse (50) ekrano, vw - yra visas ekrano plotis     {# nesimato sita komentara! #}   */  
+}
+h2 {
+    border-bottom-width: 5px;
+    border-style: groove;
+    box-shadow: #999 0.25rem 0.25rem;
+    width: 80vw;
+}
+.antras {
+    color: rgb(38, 128, 42);
+}
+.dvidesimt{
+    width: 20vw;
+}
+
+.text-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.right-box {
+    display: inline-block;
+    float: right;
+    width: 33%;
+    padding: 1rem;
+    border: 2px solid maroon;
+    background-color: aqua;
+    color: blue;
+    margin: -0.5rem;
+}
+
+h1.highlight {
+    background-color: pink;
+}
+.highlight{
+    background-color: yellowgreen;
+}
+img {
+    max-width: 50%;
+    padding-bottom: 0.5rem;
+
+}
+    </style>
+
+</head>
+<body>
+    <h1 class="highlight">Hello worldas!</h1> 
+    <h2 class="antras">Matyti, kad dešimtokai, išanalizavę tradicinės literatūros kūrinį, pagrindinę mintį nustatė labai tiksliai</h2>
+    
+    <h3 class="dvidesimt" >Hi!</h3>
+    
+  
+    <p>Everything seem working...</p>
+    <p class="antras" style="margin-bottom: 2rem;">Matyti, kad dešimtokai, išanalizavę tradicinės literatūros kūrinį, pagrindinę mintį nustatė labai tiksliai 
+    (daugiau ¾ atsakinėjusių) ir dauguma, ir tik keletas mokinių darė vieną kitą paklaidą, nukrypdami šiek tiek 
+    ne į tą pusę. Blogiau pagrindę mintį formulavo moderniosios literatūros tekste. Akivaizdu, kad niekas visiškai </p>
+    <p style="color: #737;" class="text-center">tiksliai į šį klausimą  neatsakė, o ¼ atsakymų iš viso buvo neteisingi, t.y., mokiniai nesuvokė nei pagrindinės 
+    novelės problemos, nei pagrindinės minties.</p>    
+    <img src="https://th.bing.com/th/id/OIP.ATwW4a4OdyKprptLBSd8qAHaGL?w=215&h=180&c=7&r=0&o=5&pid=1.7">
+
+    <p>Galima daryti išvadas, kad visgi, nors ir esama paradoksalių rezultatų, kada dešimtokai prasčiau atsakinėjo į J. 
+    Biliūno novelės klausimus, tačiau dauguma atsakymų rodo ir tai, kad dešimtokams sudėtingesnis buvęs antrasis tekstas 
+    B. Vilimaitės „Pusryčiai ant žolės“.</p>
+    <p>Galima daryti išvadas, kad visgi, nors ir esama paradoksalių rezultatų, kada dešimtokai prasčiau atsakinėjo į J. 
+        Biliūno novelės klausimus, tačiau dauguma atsakymų rodo ir tai, kad dešimtokams sudėtingesnis buvęs antrasis tekstas 
+        B. Vilimaitės „Pusryčiai ant žolės“.</p>
+    <p class="right-box">Darbe lieka plačiau neaptarti likusieji trys testų klausimai, nes jie yra saviti ir individualūs pagal 
+    kiekvieną novelę, tačiau pagal atsakymus į juos yra sudarytos taškų diagramos, kurios rodo tam tikras 
+    tendencijas ir sunkumus analizuojant modernios literatūros tekstus. </p>
+    <p>Hello - hello - hell:O)</p>
+    <p class="highlight">(Diagramos pridedamos. )</p>
+    <p>Galima daryti išvadas, kad visgi, nors ir esama paradoksalių rezultatų, kada dešimtokai prasčiau atsakinėjo į J. 
+    Biliūno novelės klausimus, tačiau dauguma atsakymų rodo ir tai, kad dešimtokams sudėtingesnis buvęs antrasis tekstas 
+    B. Vilimaitės „Pusryčiai ant žolės“.</p>
+    <p>Galima daryti išvadas, kad visgi, nors ir esama paradoksalių rezultatų, kada dešimtokai prasčiau atsakinėjo į J. 
+            Biliūno novelės klausimus, tačiau dauguma atsakymų rodo ir tai, kad dešimtokams sudėtingesnis buvęs antrasis tekstas 
+            B. Vilimaitės „Pusryčiai ant žolės“.</p>
+<img src="{{ url_for('static', filename='imd_helloween.jpeg')}}">
+
+</body>
+</html>
