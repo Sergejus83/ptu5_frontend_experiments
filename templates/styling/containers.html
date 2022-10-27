@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Containers</title>
+<style>
+.container {    
+    width: 80vw;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.orange {
+    background-color: #fc0;
+}
+.margenta {
+    background-color: #909;
+    color: #fcf;
+}
+
+.column {
+    display: inline-block;
+    width: calc(33.33% - 2rem);
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 0.5rem;
+    margin: 0.5rem;
+    overflow: auto;
+    /* overflow: hidden; */
+}
+.simtas {
+    width: calc(100% - 1rem);
+}
+.nogutter {
+    padding-left: 0;
+    padding-right: 0;
+}
+    </style>
+</head>
+<body>
+    <div class="container orange">
+    <h1>Title in the container</h1>
+    <p>Text in the first container</p>
+    </div>
+    <div class="container margenta">
+    <div class="column simtas">
+    <h2>Title in the Second container</h2>
+    <p>Text in the second container</p>
+    </div><div class="column">
+        <h2>Title in the Second container</h2>
+        <p>Text in the second container</p>
+        </div><div class="column">
+            <h2>Title in the Second container</h2>
+            <p>Text in the second container</p>
+            </div><div class="column">
+                <h2>Title in the Second container</h2>
+                <p>Text in the second container</p>
+                </div></div>
+</body>
+</html>
