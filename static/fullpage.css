@@ -6,6 +6,7 @@ body {
     /* grid-template-columns: auto 20%; */
     margin: 0;
     min-height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header {
@@ -38,11 +39,23 @@ main {
 
 header .container {
     display: grid;
-    place-items: center space-between;
+    place-items: center start;
+    grid-template-columns: 4rem repeat(6, auto);
 }
 
-.logo {
+header .logo {
     max-height: 3rem;
+}
+
+header a {
+    color: #ccc;
+    padding: 0.75rem;
+    font-size: 130%;
+    text-decoration: none;
+}
+
+header a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 main .container {

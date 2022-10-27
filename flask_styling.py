@@ -5,6 +5,10 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     return render_template("styling/home.html")
+    
+@app.route('/tree')
+def tree():
+    return render_template('styling/tree.html')
 
 @app.route('/containers')
 def containers():
