@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    background-color: #333;
+    width: 100vw;
+    height: 4rem;
+}
+
+main {
+    background-image: url('/static/sea_2.jpeg');
+    background-size: cover;
+    background-position: center center;
+    flex-grow: 1;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+
+}
+
+section.main {
+    flex-grow: 1;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 1200px;
+    max-width: 70vw;
+    /* margin: 0 auto; */
+}
+
+.transparent {
+    background: transparent !important;
+}
+
+.things {
+    background-color: rgba(233, 123, 34, 0.5);
+
+}
+
+.thing-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.thing img {
+    max-width: 100%;
+} 
+
+.tning h3 {
+    text-align: center;
+}
+
+h1 h2 h3 {
+    margin: 0 0 1rem;
+    padding: 0.5rem;
+}
+
+p {
+    padding: 0 0.5rem;
+}
+
+footer {
+    min-height: 10rem;
+    background-color: #666;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+footer .container {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

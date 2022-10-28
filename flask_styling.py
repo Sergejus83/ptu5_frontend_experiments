@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/home')
 def home():
     return render_template("styling/home.html")
     
@@ -18,9 +18,21 @@ def containers():
 def grid():
     return render_template('styling/grid.html')
 
-@app.route('/fullpage')
+@app.route('/')
 def fullpage():
     return render_template('styling/fullpage.html')
+
+@app.route('/contacts')
+def contacts():
+    return render_template('styling/contacts.html')
+
+@app.route('/flex')
+def flex():
+    return render_template('styling/flex.html')
+
+@app.route('/flexpage')
+def flexpage():
+    return render_template('styling/flexpage.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

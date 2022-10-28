@@ -34,13 +34,13 @@ main {
 
 .container {
     width: 1200px;
-    max-width: 90vw;
+    max-width: 140vw;
 }
 
 header .container {
     display: grid;
     place-items: center start;
-    grid-template-columns: 4rem repeat(6, auto);
+    grid-template-columns: 4rem repeat(8, auto);
 }
 
 header .logo {
